@@ -29,7 +29,8 @@ namespace APIFinancas.Controllers
                 ValorEmprestimo = valorEmprestimo,
                 NumMeses = numMeses,
                 TaxaPercentual = percTaxa,
-                ValorFinalComJuros = valorFinalJuros
+                ValorFinalComJuros = valorFinalJuros,
+                Mensagem = "Publicado após execução de testes automatizados"
             };
         }
     }
