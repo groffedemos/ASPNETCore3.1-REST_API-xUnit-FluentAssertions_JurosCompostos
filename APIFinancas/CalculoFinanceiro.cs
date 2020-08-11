@@ -17,9 +17,8 @@ namespace APIFinancas
             if (percTaxa <= 0)
                 throw new ArgumentException("O Percentual da Taxa de Juros deve ser maior do que zero!");
 
-            return valorEmprestimo * Math.Pow(1 + (percTaxa / 100), numMeses); // Simulação de falha 
-            //return Math.Round(
-            //    valorEmprestimo * Math.Pow(1 + (percTaxa / 100), numMeses), 2);
+            return Math.Round(
+                valorEmprestimo * Math.Pow(1 + (percTaxa / 100), numMeses), 2);
         }
     }
 }
